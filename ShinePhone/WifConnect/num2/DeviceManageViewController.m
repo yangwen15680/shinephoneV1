@@ -48,19 +48,19 @@
     //下拉搜索
     UIRefreshControl *rc=[[UIRefreshControl alloc]init];
     rc.attributedTitle=[[NSAttributedString alloc]initWithString:@"搜索设备"];
-    [rc addTarget:self action:@selector(pswdShowPressed) forControlEvents:(UIControlEventValueChanged)];
+    [rc addTarget:self action:@selector(creattThread) forControlEvents:(UIControlEventValueChanged)];
     [self.tableview addSubview:rc];
     _refresh=rc;
     
     
     
     //set NavigationBar 背景颜色&title 颜色
-    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]]];
     //[self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],UITextAttributeTextColor,nil]];
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
     
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"background.png"] forBarMetrics:UIBarMetricsDefault];
+    //[self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"background.png"] forBarMetrics:UIBarMetricsDefault];
     
     //.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
     self.tableview.delegate = self;
@@ -68,7 +68,7 @@
         CGRect rect = [[UIScreen mainScreen] applicationFrame];
         self.tableview.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, rect.size.width, 1)];
         //self.tableview.tableHeaderView.backgroundColor = [UIColor clearColor];
-        self.tableview.tableHeaderView.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"top.png"]];
+        self.tableview.tableHeaderView.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
       self.tableview.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
     }
     _deviceArray = [[NSMutableArray alloc] initWithCapacity:1];
@@ -102,7 +102,11 @@
 }
 
 
+-(void)creattThread{
 
+[NSThread detachNewThreadSelector:@selector(pswdShowPressed) toTarget:self withObject:nil];
+    
+}
 
 
 
@@ -202,7 +206,7 @@
         
       // [self.navigationController popToRootViewControllerAnimated:YES];
         
-      
+      [[NSRunLoop currentRunLoop] run];
           // [_tableview reloadData];
     };
    

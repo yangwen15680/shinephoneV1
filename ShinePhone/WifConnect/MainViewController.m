@@ -27,7 +27,8 @@
     
     [self connectUDP];
     
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"top"] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]]];
+    //[self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"top"] forBarMetrics:UIBarMetricsDefault];
     _ssidTextField.delegate = self;
     _wskeyTextField.delegate = self;
     _wakeyTextField.delegate = self;

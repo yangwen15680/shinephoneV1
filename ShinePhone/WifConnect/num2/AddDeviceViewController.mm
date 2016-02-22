@@ -70,7 +70,7 @@ static void *context = NULL;
     
    
     //set NavigationBar 背景颜色&title 颜色
-    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]]];
  
     
     

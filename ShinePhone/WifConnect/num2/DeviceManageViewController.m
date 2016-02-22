@@ -18,7 +18,12 @@
 
 @interface DeviceManageViewController ()<UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate>
 @property (nonatomic,strong) IBOutlet UITableView* tableview;
+@property (nonatomic,strong) UIRefreshControl *refresh;
 - (IBAction)addDevice:(id)sender;
+
+
+
+//-(void)pswdShowPressed;
 
 @end
 
@@ -40,13 +45,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //下拉搜索
+    UIRefreshControl *rc=[[UIRefreshControl alloc]init];
+    rc.attributedTitle=[[NSAttributedString alloc]initWithString:@"搜索设备"];
+    [rc addTarget:self action:@selector(pswdShowPressed) forControlEvents:(UIControlEventValueChanged)];
+    [self.tableview addSubview:rc];
+    _refresh=rc;
+    
+    
     
     //set NavigationBar 背景颜色&title 颜色
-    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:28/255.0 green:191/255.0 blue:215/255.0 alpha:1.0]];
-    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],UITextAttributeTextColor,nil]];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
+    //[self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],UITextAttributeTextColor,nil]];
     
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"top"] forBarMetrics:UIBarMetricsDefault];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"background.png"] forBarMetrics:UIBarMetricsDefault];
     
     //.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
     self.tableview.delegate = self;
@@ -55,7 +69,7 @@
         self.tableview.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, rect.size.width, 1)];
         //self.tableview.tableHeaderView.backgroundColor = [UIColor clearColor];
         self.tableview.tableHeaderView.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"top.png"]];
-        self.tableview.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
+      self.tableview.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
     }
     _deviceArray = [[NSMutableArray alloc] initWithCapacity:1];
    
@@ -67,6 +81,7 @@
 
 
 }
+
 
 
 
@@ -144,27 +159,23 @@
     
     [[NSRunLoop currentRunLoop] run];
     
-    
+ 
 
 }
 
 
 
 
--(IBAction)pswdShowPressed{
-    
+-(void)pswdShowPressed{
+      [_refresh endRefreshing];
     _deviceArray = nil;
     _deviceArray = [[NSMutableArray alloc] initWithCapacity:1];
-    
     //获取所有数据
     _HUD = [[MBProgressHUD alloc] initWithView:self.view];
-    
     //[[UIApplication sharedApplication].keyWindow addSubview:_HUD];
-    
     NSString *S1 = NSLocalizedString(@"S1", nil);
     _HUD.labelText = S1;
     [self.view addSubview:_HUD];
-    
         [_HUD show:YES];
     // _HUD.dimBackground=YES;
     [[UIApplication sharedApplication].keyWindow addSubview:_HUD];
@@ -188,6 +199,11 @@
         NSLog(@"cellCount = %ld",(long)cellCount);
        
         [_HUD hide:YES];
+        
+      // [self.navigationController popToRootViewControllerAnimated:YES];
+        
+      
+          // [_tableview reloadData];
     };
    
     
@@ -199,9 +215,7 @@
     //NSLog(@"cellCount = %d",cellCount);
     
     [[NSRunLoop currentRunLoop] run];
-    
-   
-
+ 
 }
 
 #pragma mark 扫描到设备

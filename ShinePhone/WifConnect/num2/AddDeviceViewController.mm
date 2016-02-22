@@ -62,16 +62,16 @@ static void *context = NULL;
                                                                  target:self
                                                                  action:@selector(goBack)];
     backItem.tag = 1;
-    backItem.tintColor=[UIColor blueColor];
-    [backItem setImage:[UIImage imageNamed:@"navi_back_white_nor.png"]];
+    backItem.tintColor=[UIColor whiteColor];
+   // [backItem setImage:[UIImage imageNamed:@"navi_back_white_nor.png"]];
     self.navigationItem.leftBarButtonItem = backItem;
     // self.view.viewPrintFormatter
     //backgroundColor=[UIColor clearColor];
     
    
     //set NavigationBar 背景颜色&title 颜色
-    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:28/255.0 green:191/255.0 blue:215/255.0 alpha:1.0]];
-    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],UITextAttributeTextColor,nil]];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
+ 
     
     
    // self.view.backgroundColor = [UIColor whiteColor];

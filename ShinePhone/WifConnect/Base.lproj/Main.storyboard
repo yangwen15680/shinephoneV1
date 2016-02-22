@@ -252,8 +252,8 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="eyE-GL-1f6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Set" backgroundImage="background.png">
-                                    <color key="titleColor" red="0.1134798601269722" green="0.0027030950877815485" blue="0.99752348661422729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Set" backgroundImage="圆角矩形.png">
+                                    <color key="titleColor" red="0.28627450980000002" green="0.52941176469999995" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -359,15 +359,9 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Device List" id="mVQ-Z1-2JH">
-                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="baf-Rp-Lc0">
-                            <color key="tintColor" red="0.1134798601269722" green="0.0027030950877815485" blue="0.99752348661422729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="pswdShowPressed" destination="fSv-Sr-et7" id="czg-sf-6wE"/>
-                            </connections>
-                        </barButtonItem>
+                    <navigationItem key="navigationItem" title="configured devices" id="mVQ-Z1-2JH">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="8Oq-tH-os9">
-                            <color key="tintColor" red="0.1134798601269722" green="0.0027030950877815485" blue="0.99752348661422729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="addDevice:" destination="fSv-Sr-et7" id="4gV-Ez-TVp"/>
                                 <segue destination="4ps-oN-IKN" kind="push" id="jnR-QW-UBv"/>
@@ -482,8 +476,8 @@
                                     <constraint firstAttribute="height" constant="35" id="rSV-CN-Ghs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Back" backgroundImage="background.png">
-                                    <color key="titleColor" red="0.1134798601269722" green="0.0027030950877815485" blue="0.99752348661422729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Back" backgroundImage="圆角矩形.png">
+                                    <color key="titleColor" red="0.28627450980000002" green="0.52941176469999995" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -496,8 +490,8 @@
                                     <constraint firstAttribute="height" constant="35" id="cLX-2S-suD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Set" backgroundImage="background.png">
-                                    <color key="titleColor" red="0.1134798601269722" green="0.0027030950877815485" blue="0.99752348661422729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Set" backgroundImage="圆角矩形.png">
+                                    <color key="titleColor" red="0.28627450980392155" green="0.52941176470588236" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -560,5 +554,6 @@
         <image name="wifiborder.png" width="320" height="120"/>
         <image name="wifiicon.png" width="50" height="46"/>
         <image name="wifisettingicon.png" width="40" height="44"/>
+        <image name="圆角矩形.png" width="473" height="91"/>
     </resources>
 </document>

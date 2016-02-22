@@ -120,7 +120,7 @@
 "kjN-I0-4zQ.text" = "网址:";
 
 /* Class = "UINavigationItem"; title = "Device List"; ObjectID = "mVQ-Z1-2JH"; */
-"mVQ-Z1-2JH.title" = "设备列表";
+"mVQ-Z1-2JH.title" = "已配置设备";
 
 /* Class = "UILabel"; text = "Display"; ObjectID = "qLC-8c-3Y6"; */
 "qLC-8c-3Y6.text" = "显示";

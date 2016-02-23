@@ -9,7 +9,6 @@
         <!--Navigation Controller-->
         <scene sceneID="RVQ-ZR-P4B">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ifx-xP-ICU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="3s3-Ih-3d5" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ocD-Ge-YUH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -19,6 +18,7 @@
                         <segue destination="ITa-oN-1Bb" kind="relationship" relationship="rootViewController" id="q27-cb-6Bc"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ifx-xP-ICU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-114" y="-64.999999999999986"/>
         </scene>
@@ -254,7 +254,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Set" backgroundImage="圆角矩形.png">
                                     <color key="titleColor" red="0.28627450980000002" green="0.52941176469999995" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="clickSetButton:" destination="ITa-oN-1Bb" eventType="touchUpInside" id="wFs-Yk-lvU"/>
@@ -531,7 +530,6 @@
         <!--Navigation Controller-->
         <scene sceneID="OVb-j5-YBP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6d5-nJ-2VJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="rwF-o8-BRc" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YGh-qa-0LS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -541,6 +539,7 @@
                         <segue destination="fSv-Sr-et7" kind="relationship" relationship="rootViewController" id="YeM-yg-N2f"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6d5-nJ-2VJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-139" y="850"/>
         </scene>

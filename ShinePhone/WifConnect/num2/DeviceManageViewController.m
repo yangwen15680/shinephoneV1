@@ -47,7 +47,8 @@
     
     //下拉搜索
     UIRefreshControl *rc=[[UIRefreshControl alloc]init];
-    rc.attributedTitle=[[NSAttributedString alloc]initWithString:@"搜索设备"];
+    NSString *S10 = NSLocalizedString(@"S10", nil);
+    rc.attributedTitle=[[NSAttributedString alloc]initWithString:S10];
     [rc addTarget:self action:@selector(creattThread) forControlEvents:(UIControlEventValueChanged)];
     [self.tableview addSubview:rc];
     _refresh=rc;

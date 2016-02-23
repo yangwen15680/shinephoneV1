@@ -277,6 +277,9 @@
 "Bus"="公交";
 "Loading more data..."="正在加载更多数据...";
 "more"="点击加载更多";
+"Set"="配置";
+"Scan Barcode"="扫描条形码";
+
 Setting="配置设备";
 Back="返回";
 
@@ -294,6 +297,7 @@ S7="设备(%@)";
 A6="wifi连接异常!";
 A7="wifi连接异常!";
 A8="配置结果为：";
+S10="搜索设备";
 
 Prog_SetWifiPwdFail= "设置wifi-module密码失败，请检查密码长度并重试！";
 Prog_WifiFail= "设置wifi-module密码失败，请重试！";

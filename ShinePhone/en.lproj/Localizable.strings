@@ -285,6 +285,9 @@
 "Loading more data..."="Loading more data...";
 "more"="more";
 
+"Set"="Set";
+"Scan Barcode"="Scan Barcode";
+
 Setting="Setting";
 Back="Back";
 
@@ -302,6 +305,7 @@ S7="Device(%@)";
 A6="Wifi connection exception!";
 A7="Wifi connection exception!";
 A8="Results of configuration：";
+S10="Search devices";
 
 Prog_SetWifiPwdFail = "Please check the length of wifi-module password and retry!";
 Prog_WifiFail = "Setting wifi-module password Fail and retry!";

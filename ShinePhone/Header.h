@@ -206,7 +206,7 @@
 #define root_Add       NSLocalizedString(@"Add", @"Add")
 #define root_Modified       NSLocalizedString(@"Modified", @"Modified")
 #define root_Delete       NSLocalizedString(@"Delete", @"Delete")
-#define root_Set      NSLocalizedString(@"配置", @"配置")
+#define root_Set      NSLocalizedString(@"Set", @"Set")
 
 #define root_Aliases_can_not_be_empty       NSLocalizedString(@"Aliases can not be empty", @"Aliases can not be empty")
 #define root_Successfully_modified       NSLocalizedString(@"Successfully modified", @"Successfully modified")
@@ -313,7 +313,7 @@
 //通用
 #define root_Cancel       NSLocalizedString(@"Cancel", @"Cancel")
 #define root_Yes       NSLocalizedString(@"Yes", @"Yes")
-#define root_QR      NSLocalizedString(@"扫描二维码", @"扫描二维码")
+#define root_QR      NSLocalizedString(@"Scan Barcode", @"Scan Barcode")
 #define root_Next       NSLocalizedString(@"Next", @"Next")
 #define root_Finish       NSLocalizedString(@"Finish", @"Finish")
 #define root_lost       NSLocalizedString(@"lost", @"lost")

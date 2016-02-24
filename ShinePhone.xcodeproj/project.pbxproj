@@ -166,7 +166,6 @@
 		3367429F1C76EB4D001B5609 /* SIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 336742581C76EB4C001B5609 /* SIAlertView.m */; };
 		336742A01C76EB4D001B5609 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3367425A1C76EB4C001B5609 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		336742A21C76EB4D001B5609 /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 3367425F1C76EB4C001B5609 /* UIAlertView+Block.m */; };
-		336742A31C76EB4D001B5609 /* title_seek.png in Resources */ = {isa = PBXBuildFile; fileRef = 336742601C76EB4C001B5609 /* title_seek.png */; };
 		336742A41C76EB4D001B5609 /* UdpCheckUtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 336742621C76EB4C001B5609 /* UdpCheckUtl.m */; };
 		336742A51C76EB4D001B5609 /* wifiborder.png in Resources */ = {isa = PBXBuildFile; fileRef = 336742631C76EB4C001B5609 /* wifiborder.png */; };
 		336742A61C76EB4D001B5609 /* wifiicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 336742641C76EB4C001B5609 /* wifiicon.png */; };
@@ -463,7 +462,6 @@
 		3367425A1C76EB4C001B5609 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
 		3367425E1C76EB4C001B5609 /* UIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Block.h"; sourceTree = "<group>"; };
 		3367425F1C76EB4C001B5609 /* UIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
-		336742601C76EB4C001B5609 /* title_seek.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_seek.png; sourceTree = "<group>"; };
 		336742611C76EB4C001B5609 /* UdpCheckUtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UdpCheckUtl.h; sourceTree = "<group>"; };
 		336742621C76EB4C001B5609 /* UdpCheckUtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UdpCheckUtl.m; sourceTree = "<group>"; };
 		336742631C76EB4C001B5609 /* wifiborder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wifiborder.png; sourceTree = "<group>"; };
@@ -1099,7 +1097,6 @@
 				336742321C76EB4C001B5609 /* DeviceManageViewController.h */,
 				336742331C76EB4C001B5609 /* DeviceManageViewController.m */,
 				336742381C76EB4C001B5609 /* OtherThing */,
-				336742601C76EB4C001B5609 /* title_seek.png */,
 				336742611C76EB4C001B5609 /* UdpCheckUtl.h */,
 				336742621C76EB4C001B5609 /* UdpCheckUtl.m */,
 				336742631C76EB4C001B5609 /* wifiborder.png */,
@@ -1444,7 +1441,6 @@
 				2B1200491B29663E007FF40A /* fadian.png in Resources */,
 				2B12005C1B29663E007FF40A /* shang.png in Resources */,
 				2B1200361B29663E007FF40A /* about_btn_bg.png in Resources */,
-				336742A31C76EB4D001B5609 /* title_seek.png in Resources */,
 				2B12005D1B29663E007FF40A /* shebei.png in Resources */,
 				2BA133C51B2A8824004A0409 /* huadong9.png in Resources */,
 				2B1200761B29663E007FF40A /* 邮箱.png in Resources */,
@@ -1915,6 +1911,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.growatt.shinephone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1996,6 +1993,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.growatt.shinephone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
